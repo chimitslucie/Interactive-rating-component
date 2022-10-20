@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Index</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="card__icon">
+                <img
+                    src="./img/icon-star.svg"
+                    alt="star"
+                    class="card__icon--star"
+                />
+            </div>
+            <h1 class="card__title">How did we do?</h1>
+            <p class="card__text">
+                Please let us know how we did with your support request. All
+                feedback is appreciated to help us improve our offering!
+            </p>
+            <div class="card__rating">
+                <button class="card__note--btn">1</button>
+                <button class="card__note--btn">2</button>
+                <button class="card__note--btn">3</button>
+                <button class="card__note--btn">4</button>
+                <button class="card__note--btn">5</button>
+            </div>
+            <button class="card__btn">Submit</button>
+        </div>
+
+        <div class="card__thanks">
+            <img
+                src="./img/illustration-thank-you.svg"
+                alt="card-with-phone"
+                class="card__logo"
+            />
+            <p class="card__thanks--text">You selected <span id="rating"></span> out of 5</p>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>

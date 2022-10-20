@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(217, 12%, 63%);
+    --Medium-grey: hsl(216, 12%, 54%);
+    --Dark-blue: hsl(213, 19%, 18%);
+    --Very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    padding: 32px 39px 32px 32px;
+    border-radius: 30px;
+    background-color: #232a34;
+    max-width: 412px;
+    width: 100%;
+}
+
+.card__icon {
+    padding: 15px 16px;
+    border-radius: 100%;
+    background-color: var(--Dark-blue);
+    text-align: center;
+    width: 48px;
+    height: 48px;
+}
+
+.card__icon--star {
+    width: 16px;
+}
+
+.card__title {
+    color: var(--White);
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.card__text {
+    color: var(--Light-grey);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 15px auto 24px auto;
+}
+
+.card__rating {
+    display: flex;
+}
+
+.card__note--btn {
+    padding: 14px 14px;
+    border-radius: 100%;
+    background-color: var(--Dark-blue);
+    text-align: center;
+    width: 51px;
+    border: none;
+    color: var(--Medium-grey);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card__note--btn + .card__note--btn {
+    margin-left: 21px;
+}
+
+.card__note--btn:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.card__note--btn.check {
+    background-color: var(--Medium-grey);
+    color: var(--White);
+}
+
+.card__btn {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--White);
+    background-color: var(--Orange);
+    padding: 11px 0;
+    border: none;
+    border-radius: 22.5px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.card__thanks {
+    padding: 45px 40px 45px 32px;
+    border-radius: 30px;
+    background-color: #232a34;
+    max-width: 412px;
+    width: 100%;
+    display: none;
+}
+
